@@ -14,7 +14,7 @@ This allow this plugin to store nodered flows over a relatively large set of dat
 In your settings file, define these two properties:
 ```
 {
-    storageModule: require("ode-red-contrib-storage-orm-datasource-juggler"),
+    storageModule: require("node-red-contrib-storage-orm-datasource-juggler"),
     storageModuleOptions: {
         connector: require("loopback-connector-mongodb"),
         connectorConfig: {
@@ -75,7 +75,7 @@ Then set the appropriate configuration to your nodered settings file
 
 ```
 {
-    storageModule: require("ode-red-contrib-storage-orm-datasource-juggler"),
+    storageModule: require("node-red-contrib-storage-orm-datasource-juggler"),
     storageModuleOptions: {
         connector: require("loopback-connector-mongodb"),
         connectorConfig: {
@@ -92,18 +92,58 @@ Then set the appropriate configuration to your nodered settings file
 Available properties ((Mongodb connector properites)[https://loopback.io/doc/en/lb3/MongoDB-connector.html#connection-properties])
 
 **database**, *String*, Database name   
-**host**, *String*Database host name   
-**name**, *String* Name of the datasource in the app   
-**password**, *String* Password to connect to database   
-**port**, *Number* Database TCP port   
-**url**, *String* Connection URL of form mongodb://user:password@host/db. Overrides other connection settings   
-**user**, *String* Username to connect to database   
+**host**, *String*, Database host name   
+**name**, *String*, Name of the datasource in the app   
+**password**, *String*, Password to connect to database   
+**port**, *Number*, Database TCP port   
+**url**, *String*, Connection URL of form mongodb://user:password@host/db. Overrides other connection settings   
+**user**, *String*, Username to connect to database   
 **authSource**, *String* Optional. Authentification database name. Usually "admin" value   
 
 
 
-##### MySql
-TODO
+#### MySql
+To use MySQL as storage system install the relative connector 
+
+```
+npm install loopback-connector-mysql
+```
+
+Then set the appropriate configuration to your nodered settings file
+
+```
+{
+    storageModule: require("node-red-contrib-storage-orm-datasource-juggler"),
+    storageModuleOptions: {
+        connector: require("loopback-connector-mysql"),
+        connectorConfig: {
+            host: "localhost",
+            port: 3306,
+            user: "",
+            password: "",
+            database: "nodered"
+        }
+    }
+}
+
+```
+
+Available properties ((MySql connector properites)[https://loopback.io/doc/en/lb3/MySQL-connector.html#properties])
+
+**collation**, *String*, Determines the charset for the connection. Default is utf8_general_ci.
+**connector**, *String*, Connector name, either “loopback-connector-mysql” or “mysql”.
+**connectionLimit**, *Number*, The maximum number of connections to create at once. Default is 10.
+**database**, *String*, Database name
+**debug**, *Boolean*, If true, turn on verbose mode to debug database queries and lifecycle.
+**host**, *String*, Database host name
+**password**, *String*, Password to connect to database
+**port**, *Number*, Database TCP port
+**socketPath**, *String*, The path to a unix domain socket to connect to. When used host and port are ignored.
+**supportBigNumbers**, *Boolean*, Enable this option to deal with big numbers (BIGINT and DECIMAL columns) in the database. Default is false.
+**timeZone**, *String*, The timezone used to store local dates. Default is ‘local’.
+**url**, *String*, Connection URL of form mysql://user:password@host/db. Overrides other connection settings.
+**username**, *String*, Username to connect to database
+
 
 ##### MSSQL
 TODO
