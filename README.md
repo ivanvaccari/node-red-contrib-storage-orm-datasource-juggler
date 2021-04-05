@@ -64,20 +64,14 @@ overwriteSessions: true
 ```
 
 
-## Examples
+### Mongodb
+To use MongoDb as storage system install the relative connector 
 
+```
+npm install loopback-connector-mongodb
+```
 
-##### Mongodb
-Available properties ((Mongodb connector properites)[https://loopback.io/doc/en/lb3/MongoDB-connector.html#connection-properties])
-
-**database**, *String*, Database name   
-**host**, *String*Database host name   
-**name**, *String* Name of the datasource in the app   
-**password**, *String* Password to connect to database   
-**port**, *Number* Database TCP port   
-**url**, *String* Connection URL of form mongodb://user:password@host/db. Overrides other connection settings   
-**user**, *String* Username to connect to database   
-**authSource**, *String* Optional. Authentification database name. Usually "admin" value   
+Then set the appropriate configuration to your nodered settings file
 
 ```
 {
@@ -94,6 +88,19 @@ Available properties ((Mongodb connector properites)[https://loopback.io/doc/en/
     }
 }
 ```
+
+Available properties ((Mongodb connector properites)[https://loopback.io/doc/en/lb3/MongoDB-connector.html#connection-properties])
+
+**database**, *String*, Database name   
+**host**, *String*Database host name   
+**name**, *String* Name of the datasource in the app   
+**password**, *String* Password to connect to database   
+**port**, *Number* Database TCP port   
+**url**, *String* Connection URL of form mongodb://user:password@host/db. Overrides other connection settings   
+**user**, *String* Username to connect to database   
+**authSource**, *String* Optional. Authentification database name. Usually "admin" value   
+
+
 
 ##### MySql
 TODO
