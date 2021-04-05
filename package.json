@@ -1,0 +1,22 @@
+{
+  "name": "red-contrib-storage-orm-datasource-juggler",
+  "version": "1.0.0",
+  "description": "A Nodered storage plugin to persist flows in a large set of databases, powered by thepowerful loopback-datasource-juggler ORM",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivanvaccari/node-red-contrib-storage-orm-datasource-juggler.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ivanvaccari/node-red-contrib-storage-orm-datasource-juggler/issues"
+  },
+  "homepage": "https://github.com/ivanvaccari/node-red-contrib-storage-orm-datasource-juggler#readme",
+  "dependencies": {
+    "loopback-datasource-juggler": "^4.26.0"
+  }
+}
