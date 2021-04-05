@@ -1,16 +1,16 @@
-# node-red-contrib-storage-orm-datasource-juggler
+## node-red-contrib-storage-orm-datasource-juggler
 A Nodered storage plugin to persist flows in a large set of databases, powered by thepowerful loopback-datasource-juggler ORM
 
 
-# What is datasource-juggler?
+## What is datasource-juggler?
 From [loopback-datasource-juggler](https://github.com/strongloop/loopback-datasource-juggler) repo:
 > An ORM/ODM that provides a common set of interfaces for interacting with databases, REST APIs, and other types of data sources. It was originally forked from JugglingDB.
 
 With an ORM, you can access different DBMS with the same code, making easier for the developer to support multiple database systems.
 
-This allow this plugin to store the nodered flows over a relatively large set of databases, like MongoDB, MySQL, MSSQL, PostgreSQL and many others (19 or even more, see [loopback database connectors](https://loopback.io/doc/en/lb3/Database-connectors.html))
+This allow this plugin to store nodered flows over a relatively large set of databases: **MongoDB**, **MySQL**, **MSSQL**, **PostgreSQL**, **DB2**, **Oracle** and many others (more than 19 availabe, see [loopback database connectors](https://loopback.io/doc/en/lb3/Database-connectors.html))
 
-# Usage
+## Usage
 In your settings file, define these two properties:
 ```
 {
@@ -30,7 +30,8 @@ In your settings file, define these two properties:
 }
 ```
 
-# storageModuleOptions
+## StorageModuleOptions
+This is the list of available options with their defaults:
 
 ```
 
@@ -61,3 +62,41 @@ overwriteSettings: true,
 overwriteSessions: true
 
 ```
+
+
+## Examples
+
+
+##### Mongodb
+Available properties ((Mongodb connector properites)[https://loopback.io/doc/en/lb3/MongoDB-connector.html#connection-properties])
+
+**database**, *String*, Database name
+**host**, *String*Database host name
+**name**, *String* Name of the datasource in the app
+**password**, *String* Password to connect to database
+**port**, *Number* Database TCP port
+**url**, *String* Connection URL of form mongodb://user:password@host/db. Overrides other connection settings.
+**user**, *String* Username to connect to database
+**authSource**, *String* Optional. Authentification database name. Usually "admin" value.
+
+```
+{
+    storageModule: require("ode-red-contrib-storage-orm-datasource-juggler"),
+    storageModuleOptions: {
+        connector: require("loopback-connector-mongodb"),
+        connectorConfig: {
+            host: "localhost",
+            port: 27017,
+            user: "",
+            password: "",
+            database: "nodered"
+        }
+    }
+}
+```
+
+##### MySql
+TODO
+
+##### MSSQL
+TODO
