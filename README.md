@@ -130,19 +130,19 @@ Then set the appropriate configuration to your nodered settings file
 
 Available properties ((MySql connector properites)[https://loopback.io/doc/en/lb3/MySQL-connector.html#properties])
 
-**collation**, *String*, Determines the charset for the connection. Default is utf8_general_ci.
-**connector**, *String*, Connector name, either “loopback-connector-mysql” or “mysql”.
-**connectionLimit**, *Number*, The maximum number of connections to create at once. Default is 10.
-**database**, *String*, Database name
-**debug**, *Boolean*, If true, turn on verbose mode to debug database queries and lifecycle.
-**host**, *String*, Database host name
-**password**, *String*, Password to connect to database
-**port**, *Number*, Database TCP port
-**socketPath**, *String*, The path to a unix domain socket to connect to. When used host and port are ignored.
-**supportBigNumbers**, *Boolean*, Enable this option to deal with big numbers (BIGINT and DECIMAL columns) in the database. Default is false.
-**timeZone**, *String*, The timezone used to store local dates. Default is ‘local’.
-**url**, *String*, Connection URL of form mysql://user:password@host/db. Overrides other connection settings.
-**username**, *String*, Username to connect to database
+**collation**, *String*, Determines the charset for the connection. Default is utf8_general_ci.   
+**connector**, *String*, Connector name, either “loopback-connector-mysql” or “mysql”.   
+**connectionLimit**, *Number*, The maximum number of connections to create at once. Default is 10.   
+**database**, *String*, Database name   
+**debug**, *Boolean*, If true, turn on verbose mode to debug database queries and lifecycle.   
+**host**, *String*, Database host name   
+**password**, *String*, Password to connect to database   
+**port**, *Number*, Database TCP port   
+**socketPath**, *String*, The path to a unix domain socket to connect to. When used host and port are ignored.   
+**supportBigNumbers**, *Boolean*, Enable this option to deal with big numbers (BIGINT and DECIMAL columns) in the database. Default is false.   
+**timeZone**, *String*, The timezone used to store local dates. Default is ‘local’.   
+**url**, *String*, Connection URL of form mysql://user:password@host/db. Overrides other connection settings.   
+**username**, *String*, Username to connect to database   
 
 
 ##### MSSQL
