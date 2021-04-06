@@ -89,7 +89,7 @@ Then set the appropriate configuration to your nodered settings file
 }
 ```
 
-Available properties ((Mongodb connector properites)[https://loopback.io/doc/en/lb3/MongoDB-connector.html#connection-properties])
+#### Available properties
 
 **database**, *String*, Database name   
 **host**, *String*, Database host name   
@@ -100,7 +100,10 @@ Available properties ((Mongodb connector properites)[https://loopback.io/doc/en/
 **user**, *String*, Username to connect to database   
 **authSource**, *String* Optional. Authentification database name. Usually "admin" value   
 
-#### MySql
+See (Mongodb connector properites)[https://loopback.io/doc/en/lb3/MongoDB-connector.html#connection-properties] for full list.
+
+
+### MySql
 To use MySQL as storage system install the relative connector 
 
 ```
@@ -126,16 +129,16 @@ Then set the appropriate configuration to your nodered settings file
 
 ```
 
-**SCHEMA NOTE**
+#### Schema 
 
-You must create the tables on the database before starting nodered. Use the sql script from **schemas/mysql.sql** and and your favourite client to create it. The script creates a **nodered** database, if youwant to use another name, change the rows:
+You must create the tables on the database before starting nodered. Run the sql script from **schemas/mysql.sql** with your favourite mysql client to create it. The script creates a **nodered** database, if you want to use another name, change the rows:
 
 ```
 CREATE DATABASE `myName`;
 USE `myName`;
 ```
 
-Available properties ((MySql connector properites)[https://loopback.io/doc/en/lb3/MySQL-connector.html#properties])
+#### Available properties
 
 **collation**, *String*, Determines the charset for the connection. Default is utf8_general_ci.   
 **connectionLimit**, *Number*, The maximum number of connections to create at once. Default is 10.   
@@ -150,8 +153,9 @@ Available properties ((MySql connector properites)[https://loopback.io/doc/en/lb
 **url**, *String*, Connection URL of form mysql://user:password@host/db. Overrides other connection settings.   
 **username**, *String*, Username to connect to database   
 
+See (MySql connector properites)[https://loopback.io/doc/en/lb3/MySQL-connector.html#properties] for full list.
 
-##### MSSQL
+### MSSQL
 TODO
 
 
