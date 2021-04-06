@@ -64,7 +64,7 @@ overwriteSessions: true
 ```
 
 
-### Mongodb
+## MongoDB
 To use MongoDb as storage system install the relative connector 
 
 ```
@@ -103,7 +103,7 @@ Then set the appropriate configuration to your nodered settings file
 See (Mongodb connector properites)[https://loopback.io/doc/en/lb3/MongoDB-connector.html#connection-properties] for full list.
 
 
-### MySql
+## MySQL
 To use MySQL as storage system install the relative connector 
 
 ```
@@ -155,10 +155,17 @@ USE `myName`;
 
 See (MySql connector properites)[https://loopback.io/doc/en/lb3/MySQL-connector.html#properties] for full list.
 
-### MSSQL
+## MSSQL
 TODO
 
+## PostgreSQL
+TODO
 
+## Oracle
+TODO
+
+## Cloudant
+TODO
 
 ### FAQ
 
