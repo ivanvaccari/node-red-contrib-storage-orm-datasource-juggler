@@ -1,6 +1,6 @@
 {
   "name": "red-contrib-storage-orm-datasource-juggler",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "A Nodered storage plugin to persist flows in a large set of databases, powered by thepowerful loopback-datasource-juggler ORM",
   "main": "index.js",
   "scripts": {

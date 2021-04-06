@@ -100,7 +100,7 @@ Then set the appropriate configuration to your nodered settings file
 **user**, *String*, Username to connect to database   
 **authSource**, *String* Optional. Authentification database name. Usually "admin" value   
 
-See (Mongodb connector properites)[https://loopback.io/doc/en/lb3/MongoDB-connector.html#connection-properties] for full list.
+See [Mongodb connector properites](https://loopback.io/doc/en/lb3/MongoDB-connector.html#connection-properties) for full list.
 
 
 ## MySQL
@@ -153,7 +153,7 @@ USE `myName`;
 **url**, *String*, Connection URL of form mysql://user:password@host/db. Overrides other connection settings.   
 **username**, *String*, Username to connect to database   
 
-See (MySql connector properites)[https://loopback.io/doc/en/lb3/MySQL-connector.html#properties] for full list.
+See [MySql connector properites](https://loopback.io/doc/en/lb3/MySQL-connector.html#properties) for full list.
 
 ## MSSQL
 TODO
